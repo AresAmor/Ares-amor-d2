@@ -1,0 +1,142 @@
+/* General body styling */
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Navbar styling */
+nav a {
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4545; /* Bold red hover effect */
+}
+
+/* Button styling */
+button {
+    background-color: #b80000; /* Dark red */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s, transform 0.2s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff4545; /* Lighter red for hover */
+    transform: scale(1.05);
+}
+
+/* Input fields and textareas */
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #ff4545; /* Focus effect with red border */
+    outline: none;
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* About Section */
+#about p {
+    color: #c1c1c1; /* Softer gray for text */
+    font-size: 1.2rem;
+}
+
+/* Footer styling */
+footer {
+    border-top: 1px solid #444;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff4545;
+    margin-left: 10px;
+}
+
+footer a:hover {
+    color: #fff; /* White hover effect */
+}
+
+/* Hero section */
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#home h1 {
+    font-size: 4.5rem;
+}
+
+#home p {
+    font-size: 1.5rem;
+    color: #ccc;
+}
+
+/* Shop section */
+#shop img {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#shop img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+#shop h3 {
+    margin-top: 15px;
+}
+
+/* Contact form */
+form input, form textarea {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+form button {
+    background-color: #b80000; /* Red for buttons */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+form button:hover {
+    background-color: #ff4545;
+    transform: scale(1.05);
+}

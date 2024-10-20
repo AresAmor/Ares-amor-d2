@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ares Amor - Bold Elegance</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/3.0.0/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Oswald:wght@600&display=swap');
+    </style>
+</head>
+<body class="bg-black text-white" style="font-family: 'Oswald', sans-serif;">
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center p-6 border-b border-gray-700">
+        <a href="#" class="text-4xl font-bold text-white" style="font-family: 'Playfair Display', serif;">Ares Amor</a>
+        <ul class="flex space-x-6">
+            <li><a href="#home" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#shop" class="hover:text-gray-400">Shop</a></li>
+            <li><a href="#about" class="hover:text-gray-400">About</a></li>
+            <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+            <li>
+                <a href="https://www.instagram.com/aresamor.us" target="_blank" class="hover:text-gray-400">
+                    <img src="instagram_icon.png" alt="Instagram" class="inline w-6 h-6">
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="h-screen flex items-center justify-center bg-cover bg-center"
+             style="background-image: url('luxury_bg_dark.jpg'); background-blend-mode: overlay; background-color: rgba(0, 0, 0, 0.7);">
+        <div class="text-center p-8 rounded-lg bg-black bg-opacity-80">
+            <h1 class="text-6xl font-bold text-white">
+                Embrace Ares Amor
+            </h1>
+            <p class="mt-4 text-xl text-gray-300">Bold elegance for the daring.</p>
+            <a href="#shop" class="mt-6 inline-block bg-red-600 py-3 px-6 rounded-lg text-white hover:bg-red-500 transition">
+                Shop Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Shop Section -->
+    <section id="shop" class="py-12 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-8 text-white">Our Collection</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Doomsday T-Shirt -->
+                <div class="border border-gray-700 p-6 rounded-lg bg-gray-900">
+                    <img src="/mnt/data/doomsday tee copy.png" alt="Doomsday T-Shirt" class="mb-4 w-full h-64 object-cover rounded-md">
+                    <h3 class="text-3xl font-semibold text-white">Doomsday T-Shirt</h3>
+                    <p class="mt-2 text-xl text-gray-400">$35.00</p>
+                    <button class="mt-4 w-full bg-red-600 py-2 rounded text-white hover:bg-red-500 transition">Add to Cart</button>
+                </div>
+                <!-- Cross Jean Shorts -->
+                <div class="border border-gray-700 p-6 rounded-lg bg-gray-900">
+                    <img src="/mnt/data/Screenshot 2024-09-08 at 12.25.18 PM.png" alt="Cross Jean Shorts" class="mb-4 w-full h-64 object-cover rounded-md">
+                    <h3 class="text-3xl font-semibold text-white">Cross Jean Shorts</h3>
+                    <p class="mt-2 text-xl text-gray-400">$55.00</p>
+                    <button class="mt-4 w-full bg-red-600 py-2 rounded text-white hover:bg-red-500 transition">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="py-12 bg-gray-900">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-8 text-white">About Ares Amor</h2>
+            <p class="text-xl text-gray-300 mx-auto max-w-4xl text-center">
+                Ares Amor represents boldness, faith, and a deep connection to style. Our designs speak to those who aren’t afraid 
+                to embrace their identity while standing out. Rooted in timeless elegance and a commitment to quality, Ares Amor is 
+                a movement for those who wear their beliefs proudly and confidently.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="py-12 bg-black">
+        <div class="container mx-auto">
+            <h2 class="text-5xl font-bold text-center mb-8 text-white">Contact Us</h2>
+            <p class="text-xl text-gray-300 text-center mb-6">We would love to hear from you!</p>
+            <div class="flex justify-center">
+                <form action="mailto:aries.steward@yahoo.com" method="POST" enctype="text/plain" class="w-full max-w-lg">
+                    <div class="mb-4">
+                        <label for="name" class="block text-white mb-2">Name:</label>
+                        <input type="text" id="name" name="name" class="w-full p-3 rounded bg-gray-800 text-white">
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-white mb-2">Email:</label>
+                        <input type="email" id="email" name="email" class="w-full p-3 rounded bg-gray-800 text-white">
+                    </div>
+                    <div class="mb-4">
+                        <label for="message" class="block text-white mb-2">Message:</label>
+                        <textarea id="message" name="message" rows="4" class="w-full p-3 rounded bg-gray-800 text-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-red-600 py-3 rounded text-white hover:bg-red-500 transition">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-6 bg-black text-center text-gray-400 border-t border-gray-700">
+        <p>&copy; 2024 Ares Amor. Crafted with bold elegance.</p>
+        <a href="https://www.instagram.com/aresamor.us" target="_blank" class="inline-block mt-4">
+            <img src="instagram_icon.png" alt="Instagram" class="inline w-6 h-6">
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
